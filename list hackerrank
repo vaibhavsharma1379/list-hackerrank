@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    N = int(input())
+    #now we have n operations to do so we will loop n times
+    for i in range(N):
+        command=list(input().strip().split())
+        s=[]
+        if command[0]=="insert":
+            s.insert(command[1],command[2])
+        elif command[0]=="remove":
+            s.remove(command[1])
+        elif command[0]=="append":
+            s.append(command[0])
+        elif command[0]=="reverse":
+            s.reverse()
+        elif command=="sort":
+            s.sort()
+        elif command=="print":
+            print(s)
+        elif command=="pop":
+            s.pop()
